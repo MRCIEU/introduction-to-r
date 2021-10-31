@@ -1,0 +1,253 @@
+---
+title: "How to manage data practical"
+date: "Nov 2, 2021"
+author: "Matt Lee"
+output:
+  html_document:
+      theme: flatly
+      code_folding: hide
+      toc: true
+      number_sections: true
+      toc_float: 
+          smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The session looks at how to manage different types of data. 
+Here we will use larger data sets than you may have seen previously 
+and manipulate them in different ways. You need the following packages:
+
+```{r eval=FALSE}
+install.packages(c("R.utils",
+                   "data.table",
+                   "ff",
+                   "foreign",
+                   "xlsx",
+                   "Hmisc",
+                   "dplyr"))
+```
+
+
+# loading data in `R`
+
+1. `R` reads data into RAM - in short this means that the more data you read into `R` the more processing power your computer needs to use
+    * the more processing power your computer uses the slower it works
+2. Usually you will have a 2-4GB limit after which `R` is likely to crash or severely slow down
+
+We can help `R` use larger data sets in two simple ways:
+
+* reduce file size before loading in `R` 
+* keep the `R` environment (`ls()`) tidy - you can use `rm(list=ls())` to clear the entire environment 
+
+# Exercises
+Set your working directory to the downloads folder:
+
+```{r eval=FALSE}
+setwd("/path/to/Downloads/")
+```
+
+We will use `system.time()` throughout the exercises to time how quickly it takes to do stuff. As an example here we use `system.time()` to see how long it takes to make the system sleep for 10 seconds:
+
+```{r}
+system.time({Sys.sleep(10)})
+```
+
+* *elapsed* is the amount of time taken to run the entire task
+* *user* gives the CPU time spent by the current process (i.e., the current R session)
+* *system* gives the CPU time spent by the kernel (the operating system) on behalf of the current process
+
+Extra info: The operating system is used for things like opening files, doing input or output, starting other processes, and looking at the system clock: operations that involve resources that many processes must share. Different operating systems will have different things done by the operating system.
+
+## Exercise 1
+
+1. Download this [data](https://portals.broadinstitute.org/collaboration/giant/images/1/14/Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only.txt.gz) and unzip it. 
+The download is ~60mb and unzipped is ~180mb.
+    * if the download link doesnt work go [here](https://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files#2018_GIANT_and_UK_BioBank_Meta-analysis) and download the first GWAS titled - *Download bmi.giant-ukbb.meta-analysis.males.23May2018.HapMap2_only.txt.gz*
+2. Read the data in - this is a medium sized file so we could read it in normally if we wanted (it will take a while):
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(R.utils) # unzips .gz files
+
+# load data
+gunzip("Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only.txt.gz")
+system.time(data1 <- read.table("Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only.txt", header = T, sep = " "))
+```
+
+\  
+
+3. We can speed this process up using the `fread()` function for `data.table`:
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(data.table) # functions to read in large files quickly
+
+# load data
+system.time(data1 <- fread("Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only.txt", header = T, sep = " "))
+```
+
+\  
+
+4. We can improve on this time if we pre-specify our columns:
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(data.table) # functions to read in large files quickly
+
+# specify column classes
+classes <- c(rep("integer", 2), rep("character", 3), rep("numeric", 6))
+
+# load data
+system.time(data1 <- fread("Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only.txt", header = T, sep = " ", colClasses = classes))
+```
+
+\  
+
+## Exercise 2
+Download this [data](https://computationalmedicine.blob.core.windows.net/nmrgwas/Summary_statistics_MAGNETIC_AcAce.txt.gz?se=2020-02-20&sr=b&sp=r&sig=2luusGGHI5C0clJ2zzY7ZgeM7lQ%2FbBUuwVM4wsI9hxc%3D&sv=2014-02-14) and read it in as quickly as you can...
+
+* if the download link doesnt work go [here](http://www.computationalmedicine.fi/data#NMR_GWAS) and download the first GWAS 
+* you might need to read in a small section of the data first to see what it looks like
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(data.table) # functions to read in large files quickly
+library(R.utils) # unzips .gz files
+
+# specify column classes
+classes <- c(rep("integer", 2), rep("character", 3), rep("numeric", 4), rep("integer", 2))
+
+# load data
+# gunzip("/Users/ml16847/Downloads/Summary_statistics_MAGNETIC_AcAce.txt.gz")
+system.time(data2 <- fread("Summary_statistics_MAGNETIC_AcAce.txt", header = T, sep = " ", colClasses = classes, nrows = 10))
+```
+
+\  
+
+## Exercise 3
+For files that are bigger than 1/2GB you should either load a subset of the data (as above, select $x$ number of rows) or use a package like `ff`. This package points to your data rather than loading it directly into `R`. This process is slow but will work for large files.
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(ff) # functions to read in very large data and store it outside of RAM
+
+# specify column classes
+classes <- c(rep("integer", 2), rep("character", 3), rep("numeric", 4), rep("integer", 2))
+
+# load data
+system.time(data.ffdf <- read.table.ffdf(file = "Summary_statistics_MAGNETIC_AcAce.txt", header = T, sep = " "))
+class(data.ffdf)
+```
+
+\  
+
+## Exercise 4
+To save data we can call the `write.table()` function. Depedning on the size of the data the speed the data frame is written will vary. We can specify whether we keep column names, row names, and what the seperator is. Try to be consistent in how you save your data! I like tab seperated `.txt` files so I always save my data like this:
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+write.table(data1, "BMI_GWAS.txt", 
+            row.names = FALSE, col.names = TRUE, quote = FALSE, sep = "\t")
+
+write.table(data2, "AcAce_GWAS.txt", 
+            row.names = FALSE, col.names = TRUE, quote = FALSE, sep = "\t")
+```
+
+\  
+
+We can write out to a comma seperated file too if we wanted:
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+write.csv(data1, "BMI_GWAS.csv")
+```
+
+\  
+
+# Different file formats
+
+Everyone is likely to come across a number of different file formats over their careers. The most common are:
+
+* `.txt`
+* `.dta` (stata)
+* `.csv`
+* `.xls`/`.xlsx` (Excel)
+
+They all work a little bit differently and figuring out how to use each one can be a bit fiddly. You can use this [website](lmgtfy.com) to find out how to read in each of the above file types in to `R`. Learning to Google your problems and the best way to do the googling is the best skill that will help you figure stuf fout in `R`.
+
+## Exercise 1
+We already loaded some text files in before so we know you do that with `read.table()`. Reading .csv files is pretty similar we just use `read.csv()`. But what about the others, do some googling and read in:
+
+* this [.dta](https://stats.idre.ucla.edu/stat/stata/examples/kirk/co3.dta) file 
+* this [.xls](https://opendata.bristol.gov.uk/explore/dataset/premature-mortality-by-selected-cause-in-bristol/download/?format=xls&timezone=Europe/London&lang=en&use_labels_for_header=true) file
+* this [.sav](http://spss.allenandunwin.com.s3-website-ap-southeast-2.amazonaws.com/Files/survey.zip) file
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# Stata
+library(foreign)
+data3 <- read.dta("co3.dta")
+
+# Excel
+library(xlsx)
+data4 <- read.xlsx("premature-mortality-by-selected-cause-in-bristol.xls")
+
+# SPSS
+library(Hmisc)
+unzip("survey.zip") # we need to unzip it first
+data5 <- spss.get("survey.sav", use.value.labels=TRUE) # last option converts value labels to R factors
+```
+
+
+# Joining data
+Data frames dont always contain all of the information you want. This means you will end up with multiple data frames which you need to combine together to then perform some other function on.
+
+## Exercise 5
+
+Work out what each of the following join commands is doing
+
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+# packages
+library(dplyr)
+
+# assign data
+data1 <- band_members
+data1
+
+data2 <- band_instruments
+data2
+
+# left join
+data3 <- left_join(data1, data2, by = "name")
+data3
+
+# inner join
+data3 <- inner_join(data1, data2, by = "name")
+data3
+
+# right join
+data3 <- right_join(data1, data2, by = "name")
+data3
+
+# full join
+data3 <- full_join(data1, data2, by = "name")
+data3
+
+# semi join
+data3 <- semi_join(data1, data2, by = "name")
+data3
+
+# anti join
+data3 <- anti_join(data1, data2, by = "name")
+data3
+```
+
+### Answers
+```{r message=FALSE, warning=FALSE, error=FALSE, eval=FALSE}
+* `left_join()` - returns all of the rows from the first data frame (left) which match to the second data frame (right). Only the matching values in the second data frame are joined to the first data frame
+* `inner_join()` - returns all rows from the first data frame with matches in the second data frame
+* `right_join()` - opposite of `left_join()`
+* `full_join()` - returns everything and places `NA` where no match is found
+* `semi_join()` - returns a data frame which includes only the rows from the first data frame which match in the second data frame 
+* `anti_join()` - returns all of the rows in the first data frame which arent present in the second data frame
+```
+
+
