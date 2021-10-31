@@ -25,17 +25,17 @@ By the end of the course students will be able to:
 
 |Time |Session |Presenter|
 |-----|--------|-------|
-|10:00	|1.	Introduction to the R language (Part 1) [[web](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf)] |Matt Suderman|
+|10:00	|1.	Introduction to the R language (Part 1) [[web](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
 |10:40	|Break	||
-|10:50	|2.	Introduction to the R language (Part 2) [[web](https://perishky.github.io/r/introduction/slides.html#111), [pdf](introduction/introduction.pdf)] |Matt Suderman|
+|10:50	|2.	Introduction to the R language (Part 2) [[web](https://perishky.github.io/r/introduction/slides.html#111), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
 |11:30	| Practical (30 minutes) [[web](introduction/practical.md)] [[solution](introduction/solution.md)] ||	
 |12:00	|Break	||
-|12:30	|3.	How to write a script [[pdf](how-to-write-a-script/how-to-write-a-script.pdf)]    |Tom Battram|
-|12:55	| Practical (10 minutes) [[good_script.R](how-to-write-a-script/good_script.R), [bad_script.R](how-to-write-a-script/bad_script.R), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
-|13:05	|4.	How to make a script work [[web](https://perishky.github.io/r/making-scripts-work/slides.html), [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf)]	|Matt Suderman|
+|12:30	|3.	How to write a script [[pdf](how-to-write-a-script/how-to-write-a-script.pdf?raw=1)]    |Tom Battram|
+|12:55	| Practical (10 minutes) [[good_script.R](how-to-write-a-script/good_script.R?raw=1), [bad_script.R](how-to-write-a-script/bad_script.R?raw=1), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
+|13:05	|4.	How to make a script work [[web](https://perishky.github.io/r/making-scripts-work/slides.html), [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf?raw=1)]	|Matt Suderman|
 |13:35	|Break	||
-|13:45	|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), [pdf](how-to-manage-data/how-to-manage-data.pdf)] 	       |Matt Suderman|
-|14:20	|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/teaching-shiny-slides.html), [pdf](how-to-wow/how-to-wow.pdf)] |Luke McGuinness|
+|13:45	|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), [pdf](how-to-manage-data/how-to-manage-data.pdf?raw=1)] 	       |Matt Suderman|
+|14:20	|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/teaching-shiny-slides.html), [pdf](how-to-wow/how-to-wow.pdf?raw=1)] |Luke McGuinness|
 |14:55	|Wrap-up	||
 
 
