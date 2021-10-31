@@ -1,13 +1,4 @@
----
-title: "Introduction to R Practical"
-author: "Bristol MRC-IEU"
-date: "Nov 2, 2021"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Introduction to R Practical
 
 ## Objectives
 
