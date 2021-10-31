@@ -24,7 +24,7 @@ It is good practice to comment your code and split it up into sections.
 
 ## Loading and navigating a data frame
 
-This practical is based around the Hosmer and Lemeshow data on birthweight (lbw.csv). The file is located in the archive folder **Intro_to_R_Data.zip**. Please unzip the folder and move this file into your working directory.
+This practical is based around the Hosmer and Lemeshow data on birthweight ([lbw.csv](lbw.csv?raw=1)). Download this file to your working directory.
 
 The **lbw** data frame contains the following information:
 

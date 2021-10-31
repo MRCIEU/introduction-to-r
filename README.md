@@ -1,8 +1,13 @@
 # IEU Introduction to programming using R
 
+Tutors 
+
 > Matthew Suderman matthew.suderman@bristol.ac.uk<br>
 > Tom Battram thomas.battram@bristol.ac.uk<br>
 > Luke McGuinness luke.mcguinness@bristol.ac.uk
+
+Course materials were contributed by many people:
+Matthew Suderman, Tom Battram, Luke McGuiness, James Staley, Andrew Simpkin, Harriet Mills, Chin Yang Shapland, Wes Spiller, Gwen Fernandes and Matt Lee.
 
 ## Overall aim
 
@@ -28,7 +33,7 @@ By the end of the course students will be able to:
 |10:00	|1.	Introduction to the R language (Part 1) [[web](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
 |10:40	|Break	||
 |10:50	|2.	Introduction to the R language (Part 2) [[web](https://perishky.github.io/r/introduction/slides.html#111), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
-|11:30	| Practical (30 minutes) [[web](introduction/practical.md)]] (solutions [[web](introduction/solutions.md)]) ||	
+|11:30	| Practical (30 minutes) [[web](introduction/practical.md)] (solutions [[web](introduction/solutions.md)]) ||	
 |12:00	|Break	||
 |12:30	|3.	How to write a script [[pdf](how-to-write-a-script/how-to-write-a-script.pdf?raw=1)]    |Tom Battram|
 |12:55	| Practical (10 minutes) [[good_script.R](how-to-write-a-script/good_script.R?raw=1), [bad_script.R](how-to-write-a-script/bad_script.R?raw=1), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
