@@ -31,7 +31,7 @@ By the end of the course students will be able to:
 |12:00	|Break	||
 |12:30	|3.	[How to write a script](how-to-write-a-script/how-to-write-a-script.pdf)    |Tom Battram|
 |12:55	| [Practical (10 minutes)](how-to-write-a-script/practical.md)	   ||
-|13:05	|4.	How to make a script work [html](https://perishky.github.io/r/making-scripts-work/slides.html) [pdf](how-to-make-a-script-work/how-to-make-a-script-work.pdf)	|Matt Suderman|
+|13:05	|4.	How to make a script work [html](https://perishky.github.io/r/making-scripts-work/slides.html) [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf)	|Matt Suderman|
 |13:35	|Break	||
 |13:45	|5.	How to manage data [html](https://perishky.github.io/r/managing-data/slides.html) [pdf](how-to-manage-data/how-to-manage-data.pdf) 	       |Matt Suderman|
 |14:20	|6.	How to wow [html](https://mcguinlu.github.io/slides/intro-to-r-phd/teaching-shiny-slides.html) [pdf](how-to-wow/how-to-wow.pdf) |Luke McGuinness|
