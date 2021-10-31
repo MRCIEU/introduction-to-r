@@ -25,13 +25,13 @@ By the end of the course students will be able to:
 
 |Time |Session |Present|
 |-----|--------|-------|
-|10:00	|1.	Introduction to the R language (Part 1) [browser](https://perishky.github.io/r/introduction/slides.html){:target="_blank"} [pdf](introduction/introduction.pdf){:target="_blank"} |Matt Suderman|
+|10:00	|1.	Introduction to the R language (Part 1) [[browser](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf)] |Matt Suderman|
 |10:40	|Break	||
 |10:50	|2.	Introduction to the R language (Part 2)[browser](https://perishky.github.io/r/introduction/slides.html#111) [pdf](introduction/introduction.pdf)|Matt Suderman|
 |11:30	| Practical (30 minutes) [browser](introduction/practical.md)||	
 |12:00	|Break	||
 |12:30	|3.	How to write a script [pdf](how-to-write-a-script/how-to-write-a-script.pdf)    |Tom Battram|
-|12:55	| [Practical (10 minutes)](how-to-write-a-script/practical.md)	   ||
+|12:55	| Practical (10 minutes) [browser](how-to-write-a-script/practical.md)	   ||
 |13:05	|4.	How to make a script work [browser](https://perishky.github.io/r/making-scripts-work/slides.html) [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf)	|Matt Suderman|
 |13:35	|Break	||
 |13:45	|5.	How to manage data [browser](https://perishky.github.io/r/managing-data/slides.html) [pdf](how-to-manage-data/how-to-manage-data.pdf) 	       |Matt Suderman|
