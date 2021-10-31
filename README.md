@@ -1,7 +1,7 @@
 # IEU Introduction to programming using R
 
-> Matt Suderman matthew.suderman@bristol.ac.uk
-> Tom Battram thomas.battram@bristol.ac.uk
+> Matthew Suderman matthew.suderman@bristol.ac.uk<br>
+> Tom Battram thomas.battram@bristol.ac.uk<br>
 > Luke McGuinness luke.mcguinness@bristol.ac.uk
 
 ## Overall aim
@@ -23,7 +23,8 @@ By the end of the course students will be able to:
 
 ## Outline
 
-|Time	|Sessions	|Present|
+|Time |Session |Present|
+|-----|--------|-------|
 |10:00	|1.	Introduction to the R language (Part 1)[html](https://perishky.github.io/r/introduction/slides.html) [pdf](introduction/introduction.pdf) |Matt Suderman|
 |10:40	|Break	||
 |10:50	|2.	Introduction to the R language (Part 2)[html](https://perishky.github.io/r/introduction/slides.html#111) [pdf](introduction/introduction.pdf)|Matt Suderman|
