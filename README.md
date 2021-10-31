@@ -34,8 +34,7 @@ By the end of the course students will be able to:
 |12:55	| Practical (10 minutes) [[good_script.R](how-to-write-a-script/good_script.R?raw=1), [bad_script.R](how-to-write-a-script/bad_script.R?raw=1), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
 |13:05	|4.	How to make a script work [[web](https://perishky.github.io/r/making-scripts-work/slides.html), [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf?raw=1)]	|Matt Suderman|
 |13:35	|Break	||
-|13:45	|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), 
-[pdf](how-to-manage-data/how-to-manage-data.pdf?raw=1)] 	       |Matt Suderman|
+|13:45	|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), [pdf](how-to-manage-data/how-to-manage-data.pdf?raw=1)] 	       |Matt Suderman|
 |14:20	|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/teaching-shiny-slides.html), [pdf](how-to-wow/how-to-wow.pdf?raw=1)] |Luke McGuinness|
 |14:55	|Wrap-up	||
 
