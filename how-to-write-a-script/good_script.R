@@ -6,7 +6,7 @@
 # and total sdq (Strength and Difficulty Questionnaire) score within the cveda cohort
 # Date: 2020-10-21
 
-# Set directory and import data and save as data_cveda
+# Set directory and read in data
 setwd("a_directory")
 
 data_cveda <- read.delim("data_cveda.txt")
