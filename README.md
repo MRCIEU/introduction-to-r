@@ -14,7 +14,7 @@ Matthew Suderman, Tom Battram, Luke McGuiness, James Staley, Andrew Simpkin, Har
 This course is an introduction to programming in R, including the basics of the R language, the facilities and practices necessary to produce useful scripts and to generate attractive outputs.
 
 ## Target audience
-This course if for IEU reseachers with little or no experience in the R statistical software package but who need to use R for data analysis.
+This course is for IEU reseachers with little or no experience in the R statistical software package but who need to use R for data analysis.
 
 ## Objectives
 By the end of the course students will be able to:
