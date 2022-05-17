@@ -57,7 +57,7 @@ Day 2
 
 ### Day 2
 
-Tenative plan
+Tenative plan (order of session to be decided)
 
 - How to make your script finish sooner (Chin Yang Shapland) 
 - How to mend your broken script (Sarah Watkins)
