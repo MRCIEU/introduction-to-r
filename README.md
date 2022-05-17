@@ -4,10 +4,13 @@ Tutors
 
 > Matthew Suderman matthew.suderman@bristol.ac.uk<br>
 > Tom Battram thomas.battram@bristol.ac.uk<br>
-> Luke McGuinness luke.mcguinness@bristol.ac.uk
+> Luke McGuinness luke.mcguinness@bristol.ac.uk<br>
+> Sarah Watkins s.h.watkins@bristol.ac.uk<br>
+> Chin Yang Shapland chinyang.shapland@bristol.ac.uk<br>
+> Marina Vabistsevits marina.vabistsevits@bristol.ac.uk
 
 Course materials were contributed by many people:
-Matthew Suderman, Tom Battram, Luke McGuinness, James Staley, Andrew Simpkin, Harriet Mills, Chin Yang Shapland, Wes Spiller, Gwen Fernandes and Matt Lee.
+Matthew Suderman, Tom Battram, Luke McGuinness, James Staley, Andrew Simpkin, Harriet Mills, Chin Yang Shapland, Wes Spiller, Gwen Fernandes, Matt Lee, Sarah Watkins, Marina Vabistsevits
 
 ## Overall aim
 
@@ -19,6 +22,7 @@ This course is for IEU reseachers with little or no experience in the R statisti
 ## Objectives
 By the end of the course students will be able to:
 
+Day 1
 1.	Access the R website, download and install R
 2.	Implement the basic operations of R
 3.	Use R script files to organise R commands
@@ -26,7 +30,15 @@ By the end of the course students will be able to:
 5.	Manage large datasets
 6.	Generate attractive outputs
 
+Day 2
+1. Write scripts that run efficiently and use multiple cores
+2. Identify and fix errors in scripts 
+3. Manage projects using RStudio
+4. Understand and write scripts that use tidyverse functions and data structures
+
 ## Outline
+
+### Day 1
 
 |Time |Session |Presenter|
 |-----|--------|-------|
@@ -42,6 +54,15 @@ By the end of the course students will be able to:
 |13:45	|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), [pdf](how-to-manage-data/how-to-manage-data.pdf?raw=1)] 	       |Matt Suderman|
 |14:20	|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/index.html), [pdf](how-to-wow/How_to_wow_with_R.pdf?raw=1)] |Luke McGuinness|
 |14:55	|Wrap-up	||
+
+### Day 2
+
+Tenative plan
+
+- How to make your script finish sooner (Chin Yang Shapland) 
+- How to mend your broken script (Sarah Watkins)
+- How to organize your life with RStudio (Marina Vabistsevits)
+- How to enter the tidyverse of madness (Matt Suderman)
 
 
 ## Pre-course preparation 
