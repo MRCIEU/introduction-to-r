@@ -30,10 +30,10 @@ Day 1
 5.	Manage large datasets
 6.	Generate attractive outputs
 
-Day 2
-1. Write scripts that run efficiently and use multiple cores
+Day 2 
+1. Manage projects using RStudio
 2. Identify and fix errors in scripts 
-3. Manage projects using RStudio
+3. Write scripts that run efficiently and use multiple cores
 4. Understand and write scripts that use tidyverse functions and data structures
 
 ## Outline
@@ -57,13 +57,12 @@ Day 2
 
 ### Day 2
 
-Tenative plan (order of session to be decided)
-
-- How to make your script finish sooner (Chin Yang Shapland) 
-- How to mend your broken script (Sarah Watkins)
-- How to organize your life with RStudio (Marina Vabistsevits)
-- How to enter the tidyverse of madness (Matt Suderman)
-
+|Time |Session |Presenter|
+|-----|--------|-------|
+|June 6 10:00|1. How to organize your projects with R Studio [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-organise-your-projects-with-rstudio/how-to-organise-your-projects-with-rstudio.pdf)]|Marina Vabistsevits|
+|June 6 11:00|2. How to identify and fix errors in scripts (or "Help, my code is broken!") [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/help-my-code-is-broken/intro_to_r_pt2_broken_code.pdf)]|Sarah Watkins|
+|June 23 10:00|3. How to make your script finish sooner|Chin Yang Shapland|
+|June 23 11:00|4. HOw to enter the tidyverse of madness|Matt Suderman|
 
 ## Pre-course preparation 
 
