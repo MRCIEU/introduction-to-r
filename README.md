@@ -62,7 +62,7 @@ Day 2
 |June 6 10:00|1. How to organize your projects with R Studio [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-organise-your-projects-with-rstudio/how-to-organise-your-projects-with-rstudio.pdf?raw=1)]|Marina Vabistsevits|
 |June 6 11:00|2. How to identify and fix errors in scripts (or "Help, my code is broken!") [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/help-my-code-is-broken/intro_to_r_pt2_broken_code.pdf?raw=1)]|Sarah Watkins|
 |June 23 10:00|3. How to make your script finish sooner [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/How-to-make-your-script-finish-sooner/efficient_script_CYS_2022.pdf?raw=1)]|Chin Yang Shapland|
-|June 23 11:00|4. HOw to enter the tidyverse of madness [[web](https://perishky.github.io/r/how-to-enter-the-tidyverse-of-madness/slides.html), [pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-enter-the-tidyverse-of-madness/how-to-enter-the-tidyverse-of-madness.pdf?raw=1)]|Matt Suderman|
+|June 23 11:00|4. How to enter the tidyverse of madness [[web](https://perishky.github.io/r/how-to-enter-the-tidyverse-of-madness/slides.html), [pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-enter-the-tidyverse-of-madness/how-to-enter-the-tidyverse-of-madness.pdf?raw=1)]|Matt Suderman|
 
 ## Pre-course preparation 
 
