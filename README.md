@@ -35,7 +35,7 @@ By the end of the course students will be able to:
 
 ## Outline
 
-|<div style="width:250px">Date</div>|Session |Presenter|
+|Date|Session |Presenter|
 |--------|--------|-------|
 |Nov 11, 2022|1.	Introduction to the R language (Part 1) [[web](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
 |Nov 11, 2022|2.	Introduction to the R language (Part 2) [[web](https://perishky.github.io/r/introduction/slides.html#111), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
@@ -44,8 +44,8 @@ By the end of the course students will be able to:
 || &nbsp;&nbsp;&nbsp;&nbsp;Practical [[good_script.R](how-to-write-a-script/good_script.R?raw=1), [bad_script.R](how-to-write-a-script/bad_script.R?raw=1), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
 |Dec 9, 2022|4.	How to make a script work [[web](https://perishky.github.io/r/making-scripts-work/slides.html), [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf?raw=1)]	|Matt Suderman|
 |Dec 9, 2022|5.	How to manage data [[web](https://perishky.github.io/r/managing-data/slides.html), [pdf](how-to-manage-data/how-to-manage-data.pdf?raw=1)] 	       |Matt Suderman|
-|April 14, 2023|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/index.html), [pdf](how-to-wow/How_to_wow_with_R.pdf?raw=1)] |Luke McGuinness|
-|April 14, 2023|7. How to organize your projects with R Studio [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-organise-your-projects-with-rstudio/how-to-organise-your-projects-with-rstudio.pdf?raw=1)]|Marina Vabistsevits|
+|April 14, 2023|6.	How to wow [[web](https://mcguinlu.github.io/slides/intro-to-r-phd/index.html), [pdf](how-to-wow/How_to_wow_with_R.pdf?raw=1)] |Matthew Suderman|
+|April&nbsp;14,&nbsp;2023|7. How to organize your projects with R Studio [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-organise-your-projects-with-rstudio/how-to-organise-your-projects-with-rstudio.pdf?raw=1)]|Marina Vabistsevits|
 |April 14, 2023|8. How to identify and fix errors in scripts (or "Help, my code is broken!") [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/help-my-code-is-broken/intro_to_r_pt2_broken_code.pdf?raw=1)]|Sarah Watkins|
 |June 9, 2023|9. How to make your script finish sooner [[pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/How-to-make-your-script-finish-sooner/efficient_script_CYS_2022.pdf?raw=1)]|Chin Yang Shapland|
 |June 9, 2023|10. How to enter the tidyverse of madness [[web](https://perishky.github.io/r/enter-the-tidyverse/slides.html), [pdf](https://github.com/MRCIEU/introduction-to-r/blob/main/how-to-enter-the-tidyverse-of-madness/how-to-enter-the-tidyverse-of-madness.pdf?raw=1)]|Matt Suderman|
