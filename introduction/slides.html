@@ -883,12 +883,12 @@ class: center, middle
 > y[2] <- 2
 > y[3] <- NA
 > y
-[1] "A" "2" NA "A" "B" "C"
+[1] "A" "2" NA "B" "C"
 ```
 --
 ```r
 > is.na(y)
-[1] FALSE FALSE TRUE FALSE FALSE FALSE
+[1] FALSE FALSE TRUE FALSE FALSE
 ```
 --
 ```r
@@ -898,7 +898,7 @@ class: center, middle
 --
 ```r
 > na.omit(y)
-[1] "A" "2" "A" "B" "C"
+[1] "A" "2" "B" "C"
 ```
 
 ---
