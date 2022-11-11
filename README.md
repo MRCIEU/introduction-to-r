@@ -39,7 +39,7 @@ By the end of the course students will be able to:
 |--------|--------|-------|
 |Nov 11, 2022|1.	Introduction to the R language (Part 1) [[web](https://perishky.github.io/r/introduction/slides.html), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
 |Nov 11, 2022|2.	Introduction to the R language (Part 2) [[web](https://perishky.github.io/r/introduction/slides.html#111), [pdf](introduction/introduction.pdf?raw=1)] |Matt Suderman|
-|| &nbsp;&nbsp;&nbsp;&nbsp; Practical [[web](introduction/practical.md)], solutions [[web](introduction/solutions.md)] ||	
+|| &nbsp;&nbsp;&nbsp;&nbsp; Practical [[web](introduction/practical.html)], solutions [[web](introduction/solutions.html)] ||	
 |Dec 9, 2022|3.	How to write a script [[pdf](how-to-write-a-script/how-to-write-a-script.pdf?raw=1)]    |Tom Battram|
 || &nbsp;&nbsp;&nbsp;&nbsp;Practical [[good_script.R](how-to-write-a-script/good_script.R?raw=1), [bad_script.R](how-to-write-a-script/bad_script.R?raw=1), [github site](https://github.com/thomasbattram/how_to_write_a_script)]	   ||
 |Dec 9, 2022|4.	How to make a script work [[web](https://perishky.github.io/r/making-scripts-work/slides.html), [pdf](how-to-make-scripts-work/how-to-make-scripts-work.pdf?raw=1)]	|Matt Suderman|
